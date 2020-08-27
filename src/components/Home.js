@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import Arrow from "./Arrow";
 
 import "./styles/Home.css";
+import Instagram from "./Instagram";
 
 
 // Example function for passing into arrow
@@ -23,6 +24,9 @@ const Home = () => (
             <Arrow
                 isRight={false}
                 clickFunction={()=>handleClick()}
+            />
+            <Instagram
+                instaLink={"https://www.instagram.com/p/B9jz-6FBOP-/?utm_source=ig_web_copy_link"}
             />
         </div>
 

@@ -1,0 +1,30 @@
+#instagram {
+    margin: auto;
+    height: 326px;
+    width: 326px;
+    /*background-color: #0f6674;*/
+    overflow: hidden;
+    align-items: center;
+
+
+    position: relative;
+}
+#instagram:hover {
+    box-shadow: 0px 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+iframe {
+    /*margin-top: 10% !important;*/
+    position: absolute;
+    top: -54px !important;
+}
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #instagram {
+        width: 80vw;
+        height: 80vw;
+
+        max-width: 326px;
+        max-height: 326px;
+    }
+}
