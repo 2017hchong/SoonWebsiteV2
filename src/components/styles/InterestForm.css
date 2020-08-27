@@ -5,34 +5,10 @@
 }
 
 #interestFormHeader {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 150%;
-    /* identical to box height, or 75px */
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #000000;
-
     margin-bottom: 41px;
 }
 
 #interestFormDescription {
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    /* or 37px */
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #000000;
-
     margin-bottom: 50px;
 }
 
@@ -43,19 +19,19 @@
     margin-bottom: 20px;
 }
 
-.inputCategoryLabel {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 150%;
-    /* identical to box height, or 37px */
+/*.inputCategoryLabel {*/
+/*    font-family: Bebas Neue;*/
+/*    font-style: normal;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    line-height: 150%;*/
+/*    !* identical to box height, or 37px *!*/
 
-    text-align: left;
-    letter-spacing: 0.1em;
+/*    text-align: left;*/
+/*    letter-spacing: 0.1em;*/
 
-    color: #000000;
-}
+/*    color: #000000;*/
+/*}*/
 
 .singleRowInputs {
     display: flex;
@@ -74,10 +50,10 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    /*font-family: Arial;*/
+    /*font-style: normal;*/
+    /*font-weight: normal;*/
+    /*font-size: 16px;*/
     line-height: 150%;
     /* identical to box height, or 37px */
 
@@ -87,6 +63,17 @@
     color: #000000;
 
 }
+
+input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: 0.03em;
+}
+
 .textInput input {
     /*background-color: red;*/
     /*border: 2px solid #000000;*/
@@ -141,7 +128,7 @@
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
 }
 .communicationOption{
-    width: 30%;
+    width: 210px;
 }
 
 /*Select Dropdowns*/
@@ -173,20 +160,23 @@
     box-sizing: border-box;
     border-radius: 5px;
 
+    background-color: white;
     color: #000000;
     padding: 15px;
     width: 200px;
 
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
     line-height: 150%;
     /* identical to box height, or 60px */
 
     text-align: center;
     letter-spacing: 0.03em;
     outline: 0;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 #interestForm input[type=submit]:hover {
@@ -211,39 +201,6 @@
     color: red;
     font-size: 12px;
     position: absolute;
-}
-
-#socialMediaLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5%;
-}
-#facebookCont {
-    background: #FFFFFF;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 25px;
-    width: 47%;
-    max-width: 400px;
-}
-#instagramCont {
-    background: #FFFFFF;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 25px;
-    width: 47%;
-    max-width: 400px;
-}
-#facebookCont:hover {
-     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.3);
- }
-#instagramCont:hover {
-    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.3);
-}
-.socialImages {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .bold {

@@ -4,6 +4,7 @@ import React from "react";
 import Select from 'react-select';
 
 import './styles/InterestForm.css';
+import SocialMediaButtons from "./SocialMediaButtons";
 
 const validEmailRegex =
     RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
@@ -278,26 +279,17 @@ class InterestForm extends React.Component {
 
     render() {
 
-        let header = this.state.submitted ? "Thank you!" : "Soon Movement Interest Form";
+        let header = this.state.submitted ? "Thank you!" : "Interest Form";
         let description = this.state.submitted ?
-            <div id={"interestFormDescription"}>
+            <div id={"interestFormDescription"} className={"details"}>
                 Thank you for filling out the form! We have received your information, and one of our leaders will be in contact soon.
                 In the meantime, don't hesitate to <span className={"bold"}>join us on Facebook</span> and
                 <span className={"bold"}> follow us on Instagram</span> for latest announcements and event information!
-                <div id={"socialMediaLinks"}>
-                    <a id={"facebookCont"} href="https://www.facebook.com/groups/columbiakccc/">
-                        <img className="socialImages" src={require("../images/interestForm/facebook.svg")}></img>
-                        <div>Join us on Facebook</div>
-                    </a>
-                    <a id={"instagramCont"} href="https://www.instagram.com/cu_soonmovement/">
-                        <img className="socialImages" src={require("../images/interestForm/instagram.svg")}></img>
-                        <div>Follow us on Instagram</div>
-                    </a>
-                </div>
+                <SocialMediaButtons/>
 
             </div>
             :
-            <div id={"interestFormDescription"}>
+            <div id={"interestFormDescription"} className={"details"}>
                 Thank you for your interest in our ministry! If you want to get involved or know more,
                                     please fill out the form below and one of our staff members
                                     or student leaders will reach out to you shortly!
@@ -308,9 +300,9 @@ class InterestForm extends React.Component {
         const form = this.state.submitted ? null :
             <form onSubmit={this.handleSubmit}>
             <div className={"inputCategory"}>
-                <div className={"inputCategoryLabel"}> Name</div>
+                <div className={"body"}> Name</div>
                 <div className={"singleRowInputs"}>
-                    <div className={`halfInput textInput  
+                    <div className={`halfInput textInput details  
                             ${this.state.errors["firstName"] === undefined || this.state.errors["firstName"].length === 0 ? "" : "errorInput"}`}>
                         <input
                             placeholder={"First"}
@@ -321,7 +313,7 @@ class InterestForm extends React.Component {
                         <div className={"underline"}></div>
                         <span className={"errorText"}>{this.state.errors["firstName"]}</span>
                     </div>
-                    <div className={`halfInput textInput  
+                    <div className={`halfInput textInput details  
                             ${this.state.errors["lastName"] === undefined || this.state.errors["lastName"].length === 0 ? "" : "errorInput"}`}>
                         <input
                             placeholder={"Last"}
@@ -336,9 +328,9 @@ class InterestForm extends React.Component {
             </div>
             <div className={"inputCategory"}>
                 <div className={"singleRowInputs"}>
-                    <div className={`halfInput textInput  
+                    <div className={`halfInput textInput details 
                             ${this.state.errors["class"] === undefined || this.state.errors["class"].length === 0 ? "" : "errorInput"}`}>
-                        <div className={"inputCategoryLabel"}>Class</div>
+                        <div className={"body"}>Class</div>
                         <div className={"selectContainer"}>
                             <Select
                                 className="basic-single"
@@ -361,9 +353,9 @@ class InterestForm extends React.Component {
                         <div className={"underline"}></div>
                         <span className={"errorText"}>{this.state.errors["class"]}</span>
                     </div>
-                    <div className={`halfInput textInput  
+                    <div className={`halfInput textInput details 
                             ${this.state.errors["school"] === undefined || this.state.errors["school"].length === 0 ? "" : "errorInput"}`}>
-                        <div className={"inputCategoryLabel"}>School</div>
+                        <div className={"body"}>School</div>
                         <div className={"selectContainer"}>
                             <Select
                                 className="basic-single"
@@ -391,10 +383,10 @@ class InterestForm extends React.Component {
             <div className={"inputCategory"}>
                 <div className={"singleRowInputs"}>
                     <div
-                        className={`fullInput textInput  
+                        className={`fullInput textInput details 
                             ${this.state.errors["email"] === undefined || this.state.errors["email"].length === 0 ? "" : "errorInput"}`}
                     >
-                        <div className={"inputCategoryLabel"}>Email</div>
+                        <div className={"body"}>Email</div>
                         <input
                             name={"email"}
                             type={"text"}
@@ -407,9 +399,9 @@ class InterestForm extends React.Component {
             </div>
             <div className={"inputCategory"}>
                 <div className={"singleRowInputs"}>
-                    <div className={`fullInput textInput  
+                    <div className={`fullInput textInput details 
                             ${this.state.errors["phone"] === undefined || this.state.errors["phone"].length === 0 ? "" : "errorInput"}`}>
-                        <div className={"inputCategoryLabel"}>Phone</div>
+                        <div className={"body"}>Phone</div>
                         <input
                             name={"phone"}
                             type={"phone"}
@@ -421,9 +413,9 @@ class InterestForm extends React.Component {
                 </div>
             </div>
             <div className={"inputCategory"}>
-                <div className={"inputCategoryLabel"}>Best Form of Communication </div>
+                <div className={"body"}>Best Form of Communication </div>
                 <div className={"singleRowInputs"}>
-                    <div className={`fullInput textInput communicationOption
+                    <div className={`fullInput textInput details communicationOption
                             ${this.state.errors["options"] === undefined || this.state.errors["options"].length === 0 ? "" : "errorInput"}`}>
                         <div className={"selectContainer"}>
                             <Select
@@ -453,7 +445,7 @@ class InterestForm extends React.Component {
 
         return (
             <div id={"interestForm"}>
-                <h2 id="interestFormHeader">
+                <h2 id="interestFormHeader" className={"header"}>
                     {header}
                 </h2>
                 {description}

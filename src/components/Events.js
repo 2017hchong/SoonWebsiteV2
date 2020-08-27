@@ -4,7 +4,8 @@ import Container from 'react-bootstrap/Container';
 
 const Events = () => (
     <Container>
-        <h1 className="header">EVENTS</h1>
+        <h1 className="header">Events</h1>
+        <h2 className={"subheader"}> SubHeader </h2>
 
     </Container>
 );

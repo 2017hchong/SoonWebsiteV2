@@ -20,36 +20,12 @@
 }
 
 .navElem {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
     color: #000000;
 }
 
-a {
-    color: #000000;
-    text-decoration: none; /* no underline */
-}
 
 .boxhead a {
     color: #FFFFFF;
-    text-decoration: none;
-}
-
-a:link, a:visited{
-    color: #000000;
-    /*background-color: transparent;*/
-    text-decoration: none;
-}
-
-a:hover {
-    color: lightblue !important;
-    /*background-color: transparent;*/
-    text-decoration: none !important;
-}
-
-a:active {
-    color: #000000;
-    /*background-color: transparent;*/
     text-decoration: none;
 }
 
@@ -79,20 +55,6 @@ a:active {
         /*top: 12px;*/
         padding-left:  0px;
     }
-
-    /*#logo img {*/
-    /*    height: 40px;*/
-    /*}*/
-
-    /*.page {*/
-    /*    margin: 0 5px 10px 10px;*/
-    /*}*/
-
-    /*.navElem {*/
-    /*    font-size: 11px;*/
-    /*    padding-right: 20px;*/
-    /*    padding-top: 20px;*/
-    /*}*/
 }
   
 /* tablet & mobile (landscape) */

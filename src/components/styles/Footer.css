@@ -6,7 +6,7 @@
     bottom: 0;
     /*z-index: -1;*/
     z-index: 1000;
-    position: absolute;
+    /*position: absolute;*/
     text-align: center;
     background: #000000;
     padding: 10px;

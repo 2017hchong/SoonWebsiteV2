@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 const Resources = () => (
     <Container>
-        <h1 className="header">RESOURCES</h1>
+        <h1 className="header">Resources</h1>
     </Container>
 );
 

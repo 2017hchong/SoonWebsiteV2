@@ -7,49 +7,171 @@
   padding-bottom: 137px;
 }
 
+/* ########################################## NAV LINKS #################################################*/
+a {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 16px;
+
+  color: #000000;
+  text-decoration: none; /* no underline */
+}
+
+a:link, a:visited{
+  color: #000000;
+  /*background-color: transparent;*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightblue !important;
+  /*background-color: transparent;*/
+  text-decoration: none !important;
+}
+
+a:active {
+  color: #000000;
+  /*background-color: transparent;*/
+  text-decoration: none;
+}
 
 /* ########################################## FONT STYLES #################################################*/
 /* mobile (portrait) */
 @media only screen and (max-width: 640px) {
   .header {
-    margin: 15px auto;
     margin-bottom: 25px;
-    font-size: 35px;
+
+    font-family: 'Playfair Display SC', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    /* or 79px */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
   }
 
   .subheader {
-    font-size: 28px;
-    margin: 30px auto;
-    margin-top: 45px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 60px */
+    letter-spacing: 0.2em;
+  }
+
+  .body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: 0.03em;
+  }
+
+  .details {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: 0.03em;
   }
 }
 
 /* tablet & mobile (landscape) */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
   .header {
-    margin: 30px auto;
-    margin-bottom: 40px;
-    font-size: 45px;
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display SC', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    /* or 79px */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
   }
 
   .subheader {
-    font-size: 35px;
-    margin: 30px auto;
-    margin-top: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    /* or 60px */
+    letter-spacing: 0.1em;
+  }
+
+  .body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: 0.03em;
+  }
+
+  .details {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: 0.03em;
   }
 }
 
 /* desktop*/
 @media only screen and (min-width: 992px) {
   .header {
-    margin: 30px auto;
-    margin-bottom: 55px;
-    font-size: 55px;
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display SC', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    /* or 79px */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
   }
 
   .subheader {
-    font-size: 45px;
-    margin: 50px auto;
-    margin-top: 85px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    /* or 60px */
+    letter-spacing: 0.1em;
+  }
+
+  .body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: 0.03em;
+  }
+
+  .details {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: 0.03em;
   }
 }
