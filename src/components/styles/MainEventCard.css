@@ -1,0 +1,98 @@
+#mainEventCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#mainImageDiv {
+    width: 50%;
+    padding-top: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#mainImage {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mainText {
+    padding-left: 50px;
+    width: 50%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#dateTimeDivMainEvent {
+    margin-bottom: 36px;
+    color: rgba(0, 0, 0, 0.36);
+
+    position: relative;
+}
+
+#titleMainEvent {
+    margin-bottom: 22px;
+}
+
+#locationMainEvent {
+    position: absolute;
+    bottom: 20px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0.36);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #dateTimeDivMainEvent {
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.36);
+
+        position: relative;
+    }
+    #titleMainEvent {
+        margin-bottom: 7px;
+    }
+    #mainText {
+        padding-left: 20px;
+    }
+    #locationMainEvent {
+        position: absolute;
+        bottom: 0;
+    }
+    .dot {
+        height: 5px;
+        width: 5px;
+        background-color: rgba(0, 0, 0, 0.36);
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}

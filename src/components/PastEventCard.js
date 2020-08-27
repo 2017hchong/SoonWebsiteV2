@@ -26,7 +26,6 @@ class PastEventCard extends React.Component {
 
         return (
             <div id="pastEventCard"
-                 onClick={ this.props.clickFunction }
 
                  onMouseEnter={() => this.setState({hover: true})}
                  onMouseLeave={() => this.setState({hover: false})}>
