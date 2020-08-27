@@ -25,13 +25,38 @@ a:link, a:visited{
 a:hover {
   color: lightblue !important;
   /*background-color: transparent;*/
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 a:active {
   color: #000000;
   /*background-color: transparent;*/
   text-decoration: none;
+}
+
+.linkClass {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 16px;
+
+  color: #000000;
+  text-decoration: underline !important;
+}
+
+.linkClass a:link, a:visited{
+  color: #000000;
+  /*background-color: transparent;*/
+  text-decoration: underline !important;
+}
+
+.linkClass a:hover {
+  /*background-color: transparent;*/
+  text-decoration: underline !important;
+}
+
+.linkClass a:active {
+  color: #000000;
+  /*background-color: transparent;*/
+  text-decoration: underline !important;
 }
 
 /* ########################################## FONT STYLES #################################################*/
