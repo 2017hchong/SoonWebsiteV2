@@ -1,0 +1,140 @@
+#navBar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    /*height: 98px;*/
+    text-align: right;
+    z-index: 100;
+}
+
+/*#normalNav{*/
+/*    visibility: visible;*/
+/*}*/
+#hamburger{
+    display: none;
+}
+
+#logo {
+    position: absolute;
+    padding-left: 30px;
+}
+
+.navElem {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+a {
+    color: #000000;
+    text-decoration: none; /* no underline */
+}
+
+.boxhead a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #000000;
+    /*background-color: transparent;*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue !important;
+    /*background-color: transparent;*/
+    text-decoration: none !important;
+}
+
+a:active {
+    color: #000000;
+    /*background-color: transparent;*/
+    text-decoration: none;
+}
+
+.current {
+    color: lightblue !important;
+}
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #normalNav{
+        display: none;
+    }
+    #hamburger{
+        /*display: */
+        visibility: visible;
+        z-index: 100;
+        display: block;
+    }
+    #space {
+        height: 70px;
+    }
+    #navBar {
+        text-align: left;
+    }
+
+    #logo {
+        /*top: 12px;*/
+        padding-left:  0px;
+    }
+
+    /*#logo img {*/
+    /*    height: 40px;*/
+    /*}*/
+
+    /*.page {*/
+    /*    margin: 0 5px 10px 10px;*/
+    /*}*/
+
+    /*.navElem {*/
+    /*    font-size: 11px;*/
+    /*    padding-right: 20px;*/
+    /*    padding-top: 20px;*/
+    /*}*/
+}
+  
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    #navBar {
+        height: 75px;
+    }
+
+    #logo {
+        height: 60px;
+        top: 12px;
+    }
+
+    .page {
+        margin: 0 30px 0 20px;
+    }
+    
+    .navElem {
+        font-size: 15px;
+        padding-right: 30px;
+        padding-top: 25px;
+    }
+}
+
+/* desktop*/
+@media only screen and (min-width: 992px) {
+    #navBar {
+        height: 75px;
+    }
+
+    #logo {
+        height: 60px;
+        top: 12px;
+    }
+
+    .page {
+        margin: 0 30px 0 20px;
+    }
+
+    .navElem {
+        font-size: 16px;
+        padding-right: 30px;
+        padding-top: 25px;
+    }
+}
