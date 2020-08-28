@@ -68,6 +68,7 @@ a:active {
   margin: auto;
 }
 
+
 /* ########################################## FONT STYLES #################################################*/
 /* mobile (portrait) */
 @media only screen and (max-width: 640px) {
@@ -157,7 +158,7 @@ a:active {
     font-family: 'Playfair Display SC', serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 42px;
     line-height: 120%;
     /* or 79px */
     align-items: center;
@@ -169,7 +170,7 @@ a:active {
     font-family: 'Bebas Neue', cursive;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 120%;
     /* or 60px */
     letter-spacing: 0.1em;
@@ -183,7 +184,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 150%;
     /* or 24px */
     letter-spacing: 0.03em;
@@ -193,7 +194,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 150%;
     /* or 24px */
     letter-spacing: 0.03em;

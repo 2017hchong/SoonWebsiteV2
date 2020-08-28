@@ -5,6 +5,7 @@ import config from "../config";
 
 import Arrow from "./Arrow";
 import PastEventCard from "./PastEventCard";
+import MainEventCard from "./MainEventCard";
 
 /**
  * Load the cars from the spreadsheet
@@ -74,6 +75,20 @@ export function loadWeeklyEvents(callback) {
     });
 }
 
+const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+
+function validURL(str) {
+    var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+        '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+        '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+    return !!pattern.test(str);
+}
+
 class Events extends React.Component {
     state = {
         weeklyEvents: [],
@@ -120,9 +135,29 @@ class Events extends React.Component {
     };
 
     render() {
+
+        const sampleData = this.state.weeklyEvents[0];
+
+
+        const dateSplit = sampleData ? sampleData.date.split('/'): null;
+
+        var upcomingEvents = this.state.weeklyEvents.length === 0 ?
+            <div className={"body"}>No upcoming events at this time. Check back later!</div> :
+            <MainEventCard
+                title={sampleData.name}
+                img={sampleData.image}
+                date={monthNames[dateSplit[0]-1] + " " + dateSplit[1] + ", " + dateSplit[2]}
+                time={sampleData.time + " EST"}
+                description={sampleData.description}
+                location={sampleData.place}
+                isLink={validURL(sampleData.place)}
+           />;
+
         return (
             <Container>
                 <h1 className="header">Events</h1>
+                <h2 className={"subheader leftAlign"}> Upcoming Events </h2>
+                <div id={"upcomingEventsCont"}>{upcomingEvents}</div>
                 <h2 className={"subheader"}> Past Events </h2>
                 <PastEvents data={this.state.pastEvents}/>
             </Container>
@@ -177,9 +212,6 @@ class PastEvents extends React.Component {
     }
 
     render() {
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December"
-        ];
 
         const month = monthNames[this.state.month];
         const events = this.props.data.map((value, index) => {

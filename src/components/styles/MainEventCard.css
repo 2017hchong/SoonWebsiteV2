@@ -64,8 +64,62 @@
 
 /* mobile (portrait) */
 @media only screen and (max-width: 640px) {
+    #mainEventCard {
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #mainImageDiv {
+        width: 100%;
+        padding-top: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    #mainText {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
     #dateTimeDivMainEvent {
-        margin-bottom: 12px;
+        margin-bottom: 0;
+        color: rgba(0, 0, 0, 0.36);
+
+        position: relative;
+    }
+    #titleMainEvent {
+        margin-bottom: 0;
+    }
+    #locationMainEvent {
+        position: relative;
+        margin-top: 35px;
+    }
+    .dot {
+        height: 5px;
+        width: 5px;
+        background-color: rgba(0, 0, 0, 0.36);
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    #dateTimeDivMainEvent {
+        margin-bottom: 5px;
         color: rgba(0, 0, 0, 0.36);
 
         position: relative;
