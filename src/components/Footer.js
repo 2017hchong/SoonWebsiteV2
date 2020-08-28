@@ -9,7 +9,7 @@ class Footer extends React.Component {
                 <Icon data={IconData[1]}></Icon>
                 <Icon data={IconData[2]}></Icon>
             </div>
-            <div id={"copyText"}>
+            <div id={"copyText"} className={"details"}>
                 Copyright ©2020. All rights reserved by Columbia SOON Movement.
             </div>
         </div>
