@@ -1,11 +1,10 @@
 #instagram {
     margin: auto;
-    height: 326px;
     width: 326px;
+    height: 326px;
     /*background-color: #0f6674;*/
     overflow: hidden;
     align-items: center;
-
 
     position: relative;
 }
@@ -26,5 +25,13 @@ iframe {
 
         max-width: 326px;
         max-height: 326px;
+    }
+}
+
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    #instagram {
+        width: 326px;
+        height: 326px;
     }
 }
