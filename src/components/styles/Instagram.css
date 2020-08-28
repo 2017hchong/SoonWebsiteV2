@@ -8,6 +8,7 @@
 
     position: relative;
 }
+
 #instagram:hover {
     box-shadow: 0px 30px 30px -10px rgba(0, 0, 0, 0.2);
 }
@@ -17,21 +18,18 @@ iframe {
     top: -54px !important;
 }
 
-/* mobile (portrait) */
-@media only screen and (max-width: 640px) {
-    #instagram {
-        width: 80vw;
-        height: 80vw;
+/*!* mobile (portrait) *!*/
+/*@media only screen and (max-width: 640px) {*/
+/*    #instagram {*/
+/*        width: 320px;*/
+/*        height: 320px;*/
+/*    }*/
+/*}*/
 
-        max-width: 326px;
-        max-height: 326px;
-    }
-}
-
-/* tablet & mobile (landscape) */
-@media only screen and (min-width: 641px) and (max-width: 991px) {
-    #instagram {
-        width: 326px;
-        height: 326px;
-    }
-}
+/*!* tablet & mobile (landscape) *!*/
+/*@media only screen and (min-width: 641px) and (max-width: 991px) {*/
+/*    #instagram {*/
+/*        width: 326px;*/
+/*        height: 326px;*/
+/*    }*/
+/*}*/

@@ -11,7 +11,7 @@ class Instagram extends React.Component {
             <div id={"instagram"}>
                 <InstagramEmbed
                     url={this.props.instaLink}
-                    // maxWidth={120}
+                    maxWidth={326}
                     hideCaption={true}
                     containerTagName='div'
                     protocol=''

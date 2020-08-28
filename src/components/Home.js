@@ -18,6 +18,12 @@ function handleClick() {
     alert("Clicked Arrow!");
 }
 
+const Instaposts = [
+    "https://www.instagram.com/p/B3ntXu5B5qD/",
+    "https://www.instagram.com/p/CEXq-7Sh2Zu/",
+    "https://www.instagram.com/p/CEXqaM2BQOH/"
+];
+
 const Home = () => (
     <div>
         <Container>
@@ -25,7 +31,7 @@ const Home = () => (
                 <h2 className={"subheader whiteSpace"}>Who We Are</h2>
                 <div className={"body centeredText"}>
                     Columbia SOON Movement is a Christian fellowship at Columbia University and an interdenominational ministry, previously known as KCCC. As part of SOON Movement Global (SMG),
-                    we are committed to spreading the Gospel of Jesus Christ to eveery campus and every nation.
+                    we are committed to spreading the Gospel of Jesus Christ to every campus and every nation.
                     <br/><br/>
                     <Link to={"/aboutus"} className={"linkClass"}> About Us </Link>
                 </div>
@@ -52,13 +58,13 @@ const Home = () => (
             </div>
             <div id={"instaRow"}>
                 <Instagram
-                    instaLink={"https://www.instagram.com/p/B9jz-6FBOP-/?utm_source=ig_web_copy_link"}
+                    instaLink={Instaposts[0]}
                 />
                 <Instagram
-                    instaLink={"https://www.instagram.com/p/CEXq-7Sh2Zu/"}
+                    instaLink={Instaposts[1]}
                 />
                 <Instagram
-                    instaLink={"https://www.instagram.com/p/CEXqaM2BQOH/"}
+                    instaLink={Instaposts[2]}
                 />
             </div>
             <div className={"maxBodyWidth"}>
