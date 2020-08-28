@@ -80,8 +80,11 @@
         /*top: 12px;*/
         padding-left:  0px;
     }
+    .page {
+        margin-top: 8px;
+    }
 }
-  
+
 /* tablet & mobile (landscape) */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
     #navBar {
@@ -94,9 +97,9 @@
     }
 
     .page {
-        margin: 0 30px 0 20px;
+        margin: 0 10px 0 10px;
     }
-    
+
     .navElem {
         font-size: 15px;
         padding-right: 30px;
@@ -116,7 +119,7 @@
     }
 
     .page {
-        margin: 0 30px 0 20px;
+        margin: 0 20px 0 20px;
     }
 
     .navElem {
