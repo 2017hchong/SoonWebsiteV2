@@ -1,0 +1,41 @@
+#calendar {
+
+}
+#arrowCont {
+    display: flex;
+    flex-direction: row;
+}
+#month {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#pastEvents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #pastEvents {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+}
+
+
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    #pastEvents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+}

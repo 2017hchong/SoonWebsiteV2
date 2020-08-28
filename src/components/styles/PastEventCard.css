@@ -31,7 +31,7 @@
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
     z-index: 99999;
 
-    padding: 45px;
+    padding: 25px;
 }
 
 .white {
@@ -40,4 +40,19 @@
 
 #titlePastEvent {
     margin-bottom: 20px;
+}
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #imageWrapper {
+        padding: 45px;
+    }
+}
+
+
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    #imageWrapper {
+        padding: 25px;
+    }
 }
