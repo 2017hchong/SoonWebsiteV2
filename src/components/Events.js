@@ -189,15 +189,18 @@ class PastEvents extends React.Component {
 
             const dateSplit = value.date.split('/');
             const year = dateSplit[2];
-            // const date = dateSplit[1];
+            const date = dateSplit[1];
             const month = dateSplit[0];
+
+            const dateFormat = monthNames[month - 1] + " " + date + ", " + year;
+            const timeFormat = value.time + " EST";
 
             if(Number(year) === this.state.year && Number(month) === this.state.month + 1)
                 return (
                     <PastEventCard
                         title={value.name}
-                        date={"title"}
-                        time={"title"}
+                        date={dateFormat}
+                        time={timeFormat}
                         img={value.image}
                     />
                 );
