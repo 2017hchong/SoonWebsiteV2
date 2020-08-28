@@ -7,6 +7,7 @@ import "./styles/Home.css";
 import Instagram from "./Instagram";
 import MainEventCard from "./MainEventCard";
 import PastEventCard from "./PastEventCard";
+import PrayerRequestsForm from "./PrayerRequestsForm";
 
 
 // Example function for passing into arrow
@@ -49,6 +50,7 @@ const Home = () => (
 
         <Link className={"linkClass"}>Sample Link!</Link> <br/>
         <Link to={"/events"} className={"linkClass"}>Go to Events Page</Link>
+
     </div>
 );
 

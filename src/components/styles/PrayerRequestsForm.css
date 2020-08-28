@@ -1,0 +1,24 @@
+.textInput textarea {
+    /*background-color: red;*/
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0,0,0,0);
+}
+.textInput textarea:hover {
+    /*background-color: red;*/
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.45);
+}
+.textInput textarea:focus {
+    /*background-color: red;*/
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    outline: 0;
+}
