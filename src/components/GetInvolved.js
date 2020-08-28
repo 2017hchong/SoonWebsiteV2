@@ -16,7 +16,7 @@ class GetInvolved extends React.Component {
     render() {
         return (
             <Container>
-                <div id={"interestFormContainer"}>
+                <div className={"maxBodyWidth"}>
                     <InterestForm/>
                 </div>
             </Container>

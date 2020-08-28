@@ -59,6 +59,15 @@ a:active {
   text-decoration: underline !important;
 }
 
+.centeredText {
+  text-align: center;
+}
+
+.maxBodyWidth {
+  max-width: 700px;
+  margin: auto;
+}
+
 /* ########################################## FONT STYLES #################################################*/
 /* mobile (portrait) */
 @media only screen and (max-width: 640px) {
@@ -87,6 +96,7 @@ a:active {
 
     align-items: center;
     text-align: center;
+    margin-bottom: 70px;
   }
 
   .body {
@@ -137,6 +147,7 @@ a:active {
 
     align-items: center;
     text-align: center;
+    margin-bottom: 70px;
   }
 
   .body {
@@ -187,6 +198,7 @@ a:active {
 
     align-items: center;
     text-align: center;
+    margin-bottom: 70px;
   }
 
   .body {

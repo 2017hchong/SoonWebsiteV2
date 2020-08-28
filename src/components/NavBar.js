@@ -47,7 +47,7 @@ class NavBar extends React.Component {
                     <NavLink exact activeClassName="current" to='/events' className={"page"}>events</NavLink>
                     <NavLink exact activeClassName="current" to='/about' className={"page"}>about us</NavLink>
                     <NavLink exact activeClassName="current" to='/resources' className={"page"}>resources</NavLink>
-                    <NavLink exact activeClassName="current" to='/getInvolved' className={"page"}>Get Involved</NavLink>
+                    <NavLink exact activeClassName="current" to='/getInvolved' className={"page getInvolvedLink"}>Get Involved</NavLink>
                 </div>
             </div>
             <div id={"hamburger"}>
@@ -57,7 +57,7 @@ class NavBar extends React.Component {
                     <NavLink exact activeClassName="current" to='/events' className={"page"}>events</NavLink>
                     <NavLink exact activeClassName="current" to='/about' className={"page"}>about us</NavLink>
                     <NavLink exact activeClassName="current" to='/resources' className={"page"}>resources</NavLink>
-                    <NavLink exact activeClassName="current" to='/getInvolved' className={"page"}>Get Involved</NavLink>
+                    <NavLink exact activeClassName="current" to='/getInvolved' className={"page getInvolvedLink"}>Get Involved</NavLink>
                 </Menu>
             </div>
         </div>
