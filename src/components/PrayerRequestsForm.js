@@ -261,13 +261,12 @@ class PrayerRequestsForm extends React.Component {
 
         return (
             <div id={"interestForm"}>
-                <h2 id="interestFormHeader" className={"header"}>
+                <h2 id="interestFormHeader" className={"subheader"}>
                     {header}
                 </h2>
                 {description}
                 {form}
             </div>
-
         );
     }
 }

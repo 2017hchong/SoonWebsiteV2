@@ -63,7 +63,7 @@ a:active {
 /* mobile (portrait) */
 @media only screen and (max-width: 640px) {
   .header {
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 
     font-family: 'Playfair Display SC', serif;
     font-style: normal;
@@ -84,6 +84,9 @@ a:active {
     line-height: 120%;
     /* or 60px */
     letter-spacing: 0.2em;
+
+    align-items: center;
+    text-align: center;
   }
 
   .body {
@@ -110,7 +113,7 @@ a:active {
 /* tablet & mobile (landscape) */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
   .header {
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 
     font-family: 'Playfair Display SC', serif;
     font-style: normal;
@@ -131,6 +134,9 @@ a:active {
     line-height: 120%;
     /* or 60px */
     letter-spacing: 0.1em;
+
+    align-items: center;
+    text-align: center;
   }
 
   .body {
@@ -157,7 +163,7 @@ a:active {
 /* desktop*/
 @media only screen and (min-width: 992px) {
   .header {
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 
     font-family: 'Playfair Display SC', serif;
     font-style: normal;
@@ -178,6 +184,9 @@ a:active {
     line-height: 120%;
     /* or 60px */
     letter-spacing: 0.1em;
+
+    align-items: center;
+    text-align: center;
   }
 
   .body {
