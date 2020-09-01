@@ -12,10 +12,10 @@ import PastEventCard from "./PastEventCard";
 import PrayerRequestsForm from "./PrayerRequestsForm";
 import InterestForm from "./InterestForm";
 import SocialMediaButtons from "./SocialMediaButtons";
-
-
 import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
+import LandingPage from "./LandingPage";
+import Announcements from "./Announcements";
 
 
 // Example function for passing into arrow
@@ -34,18 +34,36 @@ const BasicRows = () => <Gallery targetRowHeight={200} columns={4} photos={photo
 
 const Home = () => (
     <div>
+        <LandingPage></LandingPage>
+
+            {/*<h1 className={"header tempHeader"}> Columbia Soon Movement</h1>*/}
+            {/*<div className={"maxBodyWidth"}>*/}
+            {/*    <div className={"body centeredText"}>*/}
+            {/*        Thank you for visiting us! We are currently in the process of renovating the site and will be fully up within the next week.*/}
+            {/*        /!*Interested in learning more about us? Visit our parent organization: <br/><br/><a href={"https://soonmovement.org/"}>Soon Movement</a>.*!/*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<div className={"whiteSpace"}/>*/}
+            {/*<BasicRows/>*/}
+            {/*<div className={"maxBodyWidth"}>*/}
+            {/*    <h2 className={"subheader whiteSpace"}>Join Our Welcome Week Giveaway!</h2>*/}
+            
+        <Announcements></Announcements>
+
         <Container>
-            <h1 className={"header tempHeader"}> Columbia Soon Movement</h1>
             <div className={"maxBodyWidth"}>
-                <div className={"body centeredText"}>
-                    Thank you for visiting us! We are currently in the process of renovating the site and will be fully up within the next week.
-                    {/*Interested in learning more about us? Visit our parent organization: <br/><br/><a href={"https://soonmovement.org/"}>Soon Movement</a>.*/}
-                </div>
-            </div>
-            <div className={"whiteSpace"}/>
-            <BasicRows/>
-            <div className={"maxBodyWidth"}>
-                <h2 className={"subheader whiteSpace"}>Join Our Welcome Week Giveaway!</h2>
+                <h2 className={"subheader whiteSpace"}> Events </h2>
+                <MainEventCard
+                    img={"https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg"}
+                    title={"Large Group"}
+                    description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+                    date={"September 10, 2020"}
+                    time={"8:00 PM EST"}
+                    location={"www.google.com"}
+                    isLink={true}
+                />
+
+                <h2 className={"subheader whiteSpace"}>Connect on Facebook</h2>
                 <div className={"body centeredText"}>
                     We are collecting short surveys for all students interested in learning more about us. Click the link below and fill out
                     the survey for a chance to win a FREE T-SHIRT! <br/><br/>
@@ -59,8 +77,6 @@ const Home = () => (
                     <SocialMediaButtons/>
                 </div>
 
-
-
                 {/*<h2 className={"subheader whiteSpace"}>Who We Are</h2>*/}
                 {/*<div className={"body centeredText"}>*/}
                 {/*    Columbia SOON Movement is a Christian fellowship at Columbia University and an interdenominational ministry, previously known as KCCC. As part of SOON Movement Global (SMG),*/}
@@ -69,6 +85,8 @@ const Home = () => (
                 {/*    <Link to={"/aboutus"} className={"linkClass"}> About Us </Link>*/}
                 {/*</div>*/}
             </div>
+            <div className={"whiteSpace"}/>
+            <BasicRows/>
         </Container>
     </div>
 );
