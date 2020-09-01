@@ -1,0 +1,12 @@
+
+> fsevents@1.2.12 install /Users/sandrasong/Desktop/SOONWebGit/SoonWebsiteV2/node_modules/fsevents
+> node-gyp rebuild
+
++ typescript@4.0.2
+added 1 package from 1 contributor and audited 1993 packages in 15.658s
+
+73 packages are looking for funding
+  run `npm fund` for details
+
+found 3599 vulnerabilities (3596 low, 2 moderate, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

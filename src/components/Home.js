@@ -11,6 +11,8 @@ import MainEventCard from "./MainEventCard";
 import PastEventCard from "./PastEventCard";
 import PrayerRequestsForm from "./PrayerRequestsForm";
 import InterestForm from "./InterestForm";
+import LandingPage from "./LandingPage";
+import Announcements from "./Announcements";
 
 
 // Example function for passing into arrow
@@ -26,6 +28,8 @@ const Instaposts = [
 
 const Home = () => (
     <div>
+        <LandingPage></LandingPage>
+
         <Container>
             <div className={"maxBodyWidth"}>
                 <h2 className={"subheader whiteSpace"}>Who We Are</h2>
@@ -35,7 +39,11 @@ const Home = () => (
                     <br/><br/>
                     <Link to={"/aboutus"} className={"linkClass"}> About Us </Link>
                 </div>
+            </div>
+            
+            <Announcements></Announcements>
 
+            <div className={"maxBodyWidth"}>
                 <h2 className={"subheader whiteSpace"}> Events </h2>
                 <MainEventCard
                     img={"https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg"}
