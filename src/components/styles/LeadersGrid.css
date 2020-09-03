@@ -1,0 +1,33 @@
+#leaderPic {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#leaderPicContainer {
+    width: 200px;
+    height: 200px;
+    /*position: relative;*/
+    overflow: hidden;
+    margin: auto;
+}
+
+#leaderSlide {
+    width: 230px;
+    margin: auto;
+    padding: 10px;
+    /*background-color: red;*/
+    margin-bottom: 30px;
+    /*margin-left: 1vw;*/
+    /*margin-right: 1vw;*/
+
+}
+
+.leadersGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#leaders {
+    margin: auto;
+}

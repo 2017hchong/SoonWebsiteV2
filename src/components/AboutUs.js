@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/AboutUs.css';
 import Container from 'react-bootstrap/Container';
 import SocialMediaButtons from "./SocialMediaButtons";
+import LeadersGrid from "./LeadersGrid";
 
 const AboutUs = () => (
     <Container>
@@ -26,6 +27,7 @@ const AboutUs = () => (
             </div>
 
             <h2 className={"subheader whiteSpace"}> Meet our Leaders</h2>
+            <LeadersGrid/>
         </div>
     </Container>
 );
@@ -93,7 +95,7 @@ const EventCardsData = [
         cardUrl: require("../images/about/retreats.svg"),
         hoverUrl: require("../images/about/retreatsHover.svg"),
     }
-]
+];
 
 // event card with hover function
 class EventCard extends React.Component {
