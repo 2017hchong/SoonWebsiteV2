@@ -10,7 +10,7 @@ const AboutUs = () => (
             <h1 className="header">About Us</h1>
         </div>
         <img id="vision" src={require('../images/about/vision.png')} alt={"Our Mission and Vision"} />
-        <img id="mobileVision" src={require('../images/about/mobileVision.svg')} alt={"Our Mission and Vision"} />
+        <img id="mobileVision" src={require('../images/about/mobileVision.png')} alt={"Our Mission and Vision"} />
         <div className={"maxBodyWidth"}>
             <h1 className={"subheader whiteSpace"}>Main Events</h1>
         </div>
