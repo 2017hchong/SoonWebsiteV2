@@ -36,6 +36,7 @@ a {
     float: right;
     position: relative;
     width: 25%;
+    padding: 10px;
 }
 
 #announcementsImage {
@@ -48,4 +49,19 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #announcementsTopContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #announcementsRight {
+        padding: 10px;
+        margin: auto;
+        width: 70%;
+    }
 }
