@@ -168,7 +168,7 @@ class EventsData extends React.Component {
         });
 
         var upcomingEvents = this.state.weeklyEvents.length === 0 ?
-            <div className={"body"}>No upcoming events at this time. Check back later!</div> :
+            <div className={"body centered"}>Loading... Refresh the page if this continues.</div> :
             <EventCarousel eventCards={eventCards} previewCards={previewCards}/>;
 
         return (

@@ -6,7 +6,7 @@ class MainEventCard extends React.Component {
 
     render() {
         const location = this.props.isLink ?
-            <a href={this.props.location} className={"linkClass"}>Join Event</a>
+            <a href={this.props.location} className={"linkClass"}>Click to Join through Zoom</a>
             : <div>{this.props.location}</div>;
         return (
             <div id="mainEventCard">

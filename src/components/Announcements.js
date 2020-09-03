@@ -27,15 +27,27 @@ class Announcements extends React.Component {
                 <Link to={this.props.linkLocation} className={"linkClass"}>{this.props.linkName}</Link>
             </p> : null;
 
+        const image = this.props.hasImage ?
+            <img id={"announcementsImage"} src={this.props.imageLocation}/> : null;
+
         return (
             <div className= "announcementsFrame">
                 <div className={"subheader"}>ANNOUNCEMENTS</div>
-                <div className={"body title"}>
-                    {this.props.title}
+                <div id={"announcementsTopContainer"}>
+                    <div id={"annoucementsLeft"}>
+                        <div className={"body title"}>
+                            {this.props.title}
+                        </div>
+                        <div className={"details announcement"}>
+                            {details}
+                        </div>
+                    </div>
+
+                    <div id={"announcementsRight"}>
+                        {image}
+                    </div>
                 </div>
-                <div className={"details announcement"}>
-                    {details}
-                </div>
+
                 <br /><br />
                 {annoucementsLink}
             </div>

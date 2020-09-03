@@ -25,3 +25,27 @@ a {
     /*max-width: 1100px;*/
     width: 100%;
 }
+
+#announcementsLeft {
+    float: left;
+    position: relative;
+    width: 70%;
+}
+
+#announcementsRight {
+    float: right;
+    position: relative;
+    width: 25%;
+}
+
+#announcementsImage {
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+#announcementsTopContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
