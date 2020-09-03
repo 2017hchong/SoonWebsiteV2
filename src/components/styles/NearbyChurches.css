@@ -1,0 +1,45 @@
+﻿#churches {
+    justify-items: center;
+    margin-top: 80px;
+}
+
+.church {
+    margin-top: 80px;
+}
+
+#ExilicIcon {
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+}
+
+#In2Icon {
+    width: 12%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+}
+
+#MorningsideIcon {
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+}
+
+p {
+    text-align: center;
+}
+
+#announcement {
+    color: red;
+    font-weight: bold;
+}
+
+.youtube {
+    font-weight: bold;
+}
