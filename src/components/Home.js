@@ -13,7 +13,7 @@ import PrayerRequestsForm from "./PrayerRequestsForm";
 import InterestForm from "./InterestForm";
 import LandingPage from "./LandingPage";
 import Announcements from "./Announcements";
-
+import EventCarousel from "./EventCarousel";
 
 // Example function for passing into arrow
 function handleClick() {
@@ -24,6 +24,92 @@ const Instaposts = [
     "https://www.instagram.com/p/B3ntXu5B5qD/",
     "https://www.instagram.com/p/CEXq-7Sh2Zu/",
     "https://www.instagram.com/p/CEXqaM2BQOH/"
+];
+
+const EventCards = [
+    <MainEventCard
+        img={"https://picsum.photos/700/400?img=1"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=2"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=3"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=4"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=5"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=6"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />
+];
+
+const PreviewCards = [
+    <PastEventCard
+        img={"https://picsum.photos/700/400?img=1"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=2"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=3"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=4"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=5"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=6"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />
 ];
 
 const Home = () => (
@@ -96,6 +182,7 @@ const Home = () => (
                 instaLink={"https://www.instagram.com/p/B9jz-6FBOP-/?utm_source=ig_web_copy_link"}
             />
         </div>
+        
         <PastEventCard
             img={"https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg"}
             title={"Large Group"}
@@ -105,6 +192,8 @@ const Home = () => (
 
         <Link className={"linkClass"}>Sample Link!</Link> <br/>
         <Link to={"/events"} className={"linkClass"}>Go to Events Page</Link>
+
+        <EventCarousel eventCards={EventCards} previewCards={PreviewCards}></EventCarousel>
     </div>
 );
 
