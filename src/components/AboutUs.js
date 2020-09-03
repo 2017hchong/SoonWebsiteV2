@@ -14,8 +14,8 @@ const AboutUs = () => (
         <div className={"maxBodyWidth"}>
             <h1 className={"subheader whiteSpace"}>Main Events</h1>
         </div>
+        <EventGrid/>
 
-        <EventGrid></EventGrid>
 
         <div className={"maxBodyWidth"}>
             <div className={"whiteSpace"}/>
@@ -72,7 +72,7 @@ const EventGrid = () => (
 const EventCardsData = [
     {
         eventName: "Large Group",
-        cardUrl: require("../images/about/largeGroup.svg"),
+        cardUrl: require("../images/about/large group.png"),
         hoverUrl: require("../images/about/lgHover.svg"),
     }, {
         eventName: "Morning Prayer",
@@ -80,7 +80,7 @@ const EventCardsData = [
         hoverUrl: require("../images/about/mpHover.svg"),
     }, {
         eventName: "Gethsemane",
-        cardUrl: require("../images/about/gethsemane.svg"),
+        cardUrl: require("../images/about/gethsemane.png"),
         hoverUrl: require("../images/about/gethHover.svg"),
     }, {
         eventName: "Small Group",

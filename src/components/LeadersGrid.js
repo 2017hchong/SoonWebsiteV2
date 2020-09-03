@@ -50,6 +50,12 @@ const sjData = [
         // description: "Some kind of short role description or bio for leader 4"
     },
     {
+        imgUrl: require("../images/leaders/jua.jpg"),
+        name: "Jua Jung",
+        role: "Soon Jang",
+        // description: "Some kind of short role description or bio for leader 4"
+    },
+    {
         imgUrl: require("../images/leaders/jeana.jpg"),
         name: "Jeana Chun",
         role: "Soon Jang",
