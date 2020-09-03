@@ -177,7 +177,7 @@ class Events extends React.Component {
                 <h1 className="header">Events</h1>
                 <h2 className={"subheader leftAlign"}> Upcoming Events </h2>
                 <div id={"upcomingEventsCont"}>{upcomingEvents}</div>
-                <h2 className={"subheader"}> Past Events </h2>
+                <h2 className={"subheader"}> All Events </h2>
                 <PastEvents data={this.state.pastEvents}/>
             </Container>
         )

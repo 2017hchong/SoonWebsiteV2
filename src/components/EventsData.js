@@ -88,6 +88,8 @@ function validURL(str) {
     return !!pattern.test(str);
 }
 
+//tbh probably not the best solution... I just didn't know how to for now...
+
 class EventsData extends React.Component {
     state = {
         weeklyEvents: [],

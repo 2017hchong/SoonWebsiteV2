@@ -1,0 +1,210 @@
+#eventgrid {
+    display: grid;
+    margin: 15px auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 3.5vw;
+    row-gap: 3.5vw;
+}
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #vision {
+        display: none;
+    }
+
+    #mobileVision {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .eventCard {
+        display: none;
+    }
+
+    .mobileEventCard img {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .mobile {
+        margin-bottom: 30px;
+    }
+
+    .leaderSlide {
+        background-color: #D2D7EC50;
+        margin: 30px 20px;
+        padding: 15px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #495874;
+    }
+
+    .leaderSlide img {
+        width: 80%;
+        margin: 16px 0px;
+    }
+
+    #leaderName {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #leaderRole {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+
+    .leaderInfo {
+        margin: 13px auto;
+        font-size: 12px;
+    }
+
+    .slidearrow img {
+        display: none;
+    }
+}
+
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    #mobileVision {
+        display: none;
+    }
+
+    #vision {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .eventCard {
+        display: none;
+    }
+
+    .mobileEventCard img {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .carousel {
+        display: grid;
+        margin: 0px auto;
+        width: 100%;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+        column-gap: 2.5vw;
+        margin-bottom: 65px;
+    }
+
+    .carousel .leaderSlide {
+        margin: 0px 1vw;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #495874;
+    }
+
+    .carousel .leaderSlide img {
+        width: 79%;
+        margin: 5px 0px 25px 0px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    #leaderName {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+
+    #leaderRole {
+        font-size: 17px;
+        margin-bottom: 14px;
+    }
+
+    .leaderInfo {
+        margin: 14px auto;
+        font-size: 14px;
+    }
+
+    .slidearrow img {
+        position: relative;
+        top: 11.5%;
+        width: 45%;
+        cursor: pointer;
+    }
+}
+
+/* desktop*/
+@media only screen and (min-width: 992px) {
+    #about {
+        padding: 0px 30px;
+    }
+
+    #mobileVision {
+        display: none;
+    }
+
+    #vision {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .eventCard img {
+        width: 100%;
+    }
+
+    .mobileEventCard img {
+        display: none;
+    }
+
+    .carousel {
+        display: grid;
+        margin: 0px auto;
+        width: 100%;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+        column-gap: 2.5vw;
+        margin-bottom: 85px;
+    }
+
+    .carousel .leaderSlide {
+        margin: 0px 1vw;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #495874;
+    }
+
+    .carousel .leaderSlide img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    #leaderName {
+        font-size: 25px;
+    }
+
+    #leaderRole {
+        font-size: 18px;
+    }
+
+    .leaderInfo {
+        margin: 15px auto;
+        font-size: 14px;
+    }
+
+    .slidearrow img {
+        position: relative;
+        top: 20%;
+        width: 45%;
+        cursor: pointer;
+    }
+}
