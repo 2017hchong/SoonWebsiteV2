@@ -5,9 +5,9 @@ class Footer extends React.Component {
     render = () => (
         <div id={"footerDiv"}>
             <div id={"iconHolder"}>
-                <Icon data={IconData[0]}></Icon>
-                <Icon data={IconData[1]}></Icon>
-                <Icon data={IconData[2]}></Icon>
+                <Icon data={IconData[0]}/>
+                <Icon data={IconData[1]}/>
+                <Icon data={IconData[2]}/>
             </div>
             <div id={"copyText"} className={"details"}>
                 Copyright ©2020. All rights reserved by Columbia SOON Movement.
@@ -58,6 +58,6 @@ const IconData = [
         iconUrl: require("../images/footer/instaIcon.svg"),
         hoverUrl: require("../images/footer/instaHover.svg"),
     }
-]
+];
 
 export default Footer;
