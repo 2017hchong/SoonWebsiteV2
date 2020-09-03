@@ -29,6 +29,7 @@ class Announcements extends React.Component {
 
         return (
             <div className= "announcementsFrame">
+                <div className={"subheader"}>ANNOUNCEMENTS</div>
                 <div className={"body title"}>
                     {this.props.title}
                 </div>

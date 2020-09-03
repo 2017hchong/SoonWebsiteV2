@@ -124,7 +124,7 @@ const Home = () => (
                 "If you're a newcomer, enter our ⬇️ RAFFLE GIVEAWAY ⬇️",
                 "http://www.tinyurl.com/soonraffle"
             ]}
-            hasLink={true}
+            hasLink={false}
             linkLocation={"/events"}
             linkName={"go to events"}
         />
@@ -143,7 +143,6 @@ const Home = () => (
                 <h2 className={"subheader whiteSpace"}> Events </h2>
             </div>
         </Container>
-            {/*<EventCarousel eventCards={EventCards} previewCards={PreviewCards}/>*/}
             <EventsData/>
         <Container>
             <div className={"maxBodyWidth"}>

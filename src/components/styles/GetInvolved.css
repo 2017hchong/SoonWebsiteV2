@@ -1,0 +1,10 @@
+#upcomingImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+#upcomingImgContainer {
+    width: 100%;
+}
+.centered {
+    text-align: center;
+}
