@@ -24,30 +24,77 @@
     height: 100%;
 }
 
-.slider1 .slick-slide {
-    padding: 50px 150px;
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    .carouselNext, .carouselPrev {
+        display: none;
+    }
+    
+    .slider1 .slick-slide {
+        padding: 10px 20px;
+    }
+
+    .thumbnail-slider-wrap {
+        display: none;
+    }
 }
 
-.thumbnail-slider-wrap {
-    margin-top: 15px;
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    .slider1 .slick-slide {
+        padding: 30px 70px;
+    }
+
+    .thumbnail-slider-wrap .slick-track #pastEventCard {
+        height: 14vw;
+        width: 14vw;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+    
+    .thumbnail-slider-wrap .slick-track #pastEventCardImgHovered,
+    .thumbnail-slider-wrap .slick-track #pastEventCardImg {
+        height: 14vw;
+        width: 14vw;
+    }
+    
+    .slick-slide #pastEventCard #imageWrapper {
+        transform: scale(1);
+        height: 14vw;
+        width: 14vw;
+    }
+
+    .thumbnail-slider-wrap {
+        margin-top: 15px;
+    }
 }
 
-.thumbnail-slider-wrap .slick-track #pastEventCard {
-    height: 15vw;
-    width: 15vw;
-    padding: 20px 0;
-    margin: 0 auto;
-}
+/* desktop*/
+@media only screen and (min-width: 992px) {
+    .slider1 .slick-slide {
+        padding: 50px 150px;
+    }
 
-.thumbnail-slider-wrap .slick-track #pastEventCardImgHovered,
-.thumbnail-slider-wrap .slick-track #pastEventCardImg {
-    height: 15vw;
-    width: 15vw;
+    .thumbnail-slider-wrap .slick-track #pastEventCard {
+        height: 15vw;
+        width: 15vw;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+    
+    .thumbnail-slider-wrap .slick-track #pastEventCardImgHovered,
+    .thumbnail-slider-wrap .slick-track #pastEventCardImg {
+        height: 15vw;
+        width: 15vw;
+    }
+    
+    .slick-slide #pastEventCard #imageWrapper {
+        transform: scale(1);
+        height: 15vw;
+        width: 15vw;
+    }
+    
+    .thumbnail-slider-wrap {
+        margin-top: 15px;
+    }
 }
-
-.slick-slide #pastEventCard #imageWrapper {
-    transform: scale(1);
-    height: 15vw;
-    width: 15vw;
-}
-
