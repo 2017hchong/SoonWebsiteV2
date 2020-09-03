@@ -17,6 +17,7 @@ import { photos } from "./photos";
 import LandingPage from "./LandingPage";
 import Announcements from "./Announcements";
 import EventCarousel from "./EventCarousel";
+import EventsData from "./EventsData";
 
 const Instaposts = [
     "https://www.instagram.com/p/B3ntXu5B5qD/",
@@ -140,17 +141,12 @@ const Home = () => (
                 </div>
 
                 <h2 className={"subheader whiteSpace"}> Events </h2>
-                <MainEventCard
-                    img={"https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg"}
-                    title={"Large Group"}
-                    description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
-                    date={"September 10, 2020"}
-                    time={"8:00 PM EST"}
-                    location={"www.google.com"}
-                    isLink={true}
-                />
-
-                <EventCarousel eventCards={EventCards} previewCards={PreviewCards}></EventCarousel>
+            </div>
+        </Container>
+            {/*<EventCarousel eventCards={EventCards} previewCards={PreviewCards}/>*/}
+            <EventsData/>
+        <Container>
+            <div className={"maxBodyWidth"}>
 
                 <h2 className={"subheader whiteSpace"}>Connect on Facebook</h2>
                 <div className={"body centeredText"}>
@@ -161,6 +157,7 @@ const Home = () => (
 
                 <h2 className={"subheader whiteSpace"}>Instagram</h2>
             </div>
+
             <div id={"instaRow"}>
                 <Instagram
                     instaLink={Instaposts[0]}
@@ -172,15 +169,13 @@ const Home = () => (
                     instaLink={Instaposts[2]}
                  />
              </div>
-            {/*<div className={"maxBodyWidth"}>*/}
-            {/*    <InterestForm/>*/}
-            {/*    <h2 className={"subheader whiteSpace"}>Connect with Us!</h2>*/}
-            {/*    <div className={"body centeredText"}>*/}
-            {/*        We are very active on social media, and would love to connect with you! Feel free to join our group on Facebook*/}
-            {/*        and follow us on Instagram!*/}
-            {/*        <SocialMediaButtons/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className={"whiteSpace"}/>
+            <h2 className={"subheader whiteSpace"}>Connect with Us!</h2>
+            <div className={"body centeredText"}>
+                Go to our <span className={"bold"}>Get Involved</span> page to fill out our interest form!
+                <br/><br/>
+                <Link to={"/getInvolved"} className={"linkClass"}>Get Involved</Link>
+            </div>
             <div className={"whiteSpace"}/>
             <BasicRows/>
         </Container>

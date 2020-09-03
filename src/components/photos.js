@@ -93,6 +93,5 @@ export const photos = [
         src: require('../images/home/photo_gallery/87486498_631658601020298_3800503035654832128_n.jpg'),
         width: 960,
         height: 720
-    },
-
+    }
 ];

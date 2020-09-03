@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import './styles/NavBar.css';
-import icon from '../images/icon.svg'
+import icon from '../images/SOONLogoLust.png'
 import React from "react";
 import { slide as Menu } from 'react-burger-menu';
 
@@ -42,7 +42,7 @@ class NavBar extends React.Component {
     render = () => (
         <div id={"navBar"}>
             <div id={"normalNav"}>
-                <div id={"logo"}><NavLink exact to='/'><img src={icon} alt={"icon"}></img></NavLink></div>
+                <div id={"logo"}><NavLink exact to='/'><img id="icon" src={icon} alt={"icon"}/></NavLink></div>
                 <div className={"navElem"}>
                     <NavLink exact activeClassName="current" to='/events' className={"page"}>events</NavLink>
                     <NavLink exact activeClassName="current" to='/about' className={"page"}>about us</NavLink>
@@ -52,7 +52,7 @@ class NavBar extends React.Component {
             </div>
             <div id={"hamburger"}>
                 <Menu right styles={styles}>
-                    <div id={"logo"}><NavLink exact to='/'><img src={icon} alt={"icon"}></img></NavLink></div>
+                    <div id={"logo"}><NavLink exact to='/'><img id="icon" src={icon} alt={"icon"}/></NavLink></div>
                     <div id={"space"}/>
                     <NavLink exact activeClassName="current" to='/events' className={"page"}>events</NavLink>
                     <NavLink exact activeClassName="current" to='/about' className={"page"}>about us</NavLink>

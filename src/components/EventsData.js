@@ -1,9 +1,6 @@
 import React from 'react';
-import './styles/Events.css';
-import Container from 'react-bootstrap/Container';
 import config from "../config";
 
-import Arrow from "./Arrow";
 import PastEventCard from "./PastEventCard";
 import MainEventCard from "./MainEventCard";
 import EventCarousel from "./EventCarousel";
@@ -40,14 +37,14 @@ export function loadWeeklyEvents(callback) {
                             })
                         }
 
-                            pastEvents.push({
-                                name: event[0],
-                                date: event[1],
-                                time: event[2],
-                                place: event[3],
-                                image: event[4],
-                                description: event[5]
-                            });
+                        pastEvents.push({
+                            name: event[0],
+                            date: event[1],
+                            time: event[2],
+                            place: event[3],
+                            image: event[4],
+                            description: event[5]
+                        });
 
 
                         if(event[7] !== undefined) {
@@ -91,7 +88,7 @@ function validURL(str) {
     return !!pattern.test(str);
 }
 
-class Events extends React.Component {
+class EventsData extends React.Component {
     state = {
         weeklyEvents: [],
         pastEvents: [],
@@ -141,14 +138,14 @@ class Events extends React.Component {
             const dateSplit = value ? value.date.split('/'): null;
 
             return <MainEventCard
-                    title={value.name}
-                    img={value.image}
-                    date={monthNames[dateSplit[0]-1] + " " + dateSplit[1] + ", " + dateSplit[2]}
-                    time={value.time + " EST"}
-                    description={value.description}
-                    location={value.place}
-                    isLink={validURL(value.place)}
-                />;
+                title={value.name}
+                img={value.image}
+                date={monthNames[dateSplit[0]-1] + " " + dateSplit[1] + ", " + dateSplit[2]}
+                time={value.time + " EST"}
+                description={value.description}
+                location={value.place}
+                isLink={validURL(value.place)}
+            />;
         });
 
         // var previewCards = this.state.weeklyEvents.map((value, index) => {
@@ -173,105 +170,9 @@ class Events extends React.Component {
             <EventCarousel eventCards={eventCards} previewCards={null}/>;
 
         return (
-            <Container>
-                <h1 className="header">Events</h1>
-                <h2 className={"subheader leftAlign"}> Upcoming Events </h2>
-                <div id={"upcomingEventsCont"}>{upcomingEvents}</div>
-                <h2 className={"subheader"}> Past Events </h2>
-                <PastEvents data={this.state.pastEvents}/>
-            </Container>
+            <div id={"upcomingEventsCont"}>{upcomingEvents}</div>
         )
     }
 };
 
-class PastEvents extends React.Component {
-    constructor(props) {
-        super(props);
-
-        const d = new Date();
-        this.state = {
-            month: d.getMonth(),
-            year: d.getFullYear()
-        };
-        this.clickUp = this.clickUp.bind(this);
-        this.clickDown = this.clickDown.bind(this);
-    }
-
-    clickUp() {
-        var month;
-        var year;
-        if(this.state.month === 0) {
-            month = 11;
-            year = this.state.year - 1;
-        } else {
-            month = this.state.month - 1;
-            year = this.state.year;
-        }
-
-        this.setState({
-            month: month,
-            year: year
-        })
-    }
-    clickDown() {
-        var month;
-        var year;
-        if(this.state.month === 11) {
-            month = 0;
-            year = this.state.year + 1;
-        } else {
-            month = this.state.month + 1;
-            year = this.state.year;
-        }
-
-        this.setState({
-            month: month,
-            year: year
-        })
-    }
-
-    render() {
-
-        const month = monthNames[this.state.month];
-        const events = this.props.data.map((value, index) => {
-            const dateSplit = value.date.split('/');
-            const year = dateSplit[2];
-            const date = dateSplit[1];
-            const month = dateSplit[0];
-
-            const dateFormat = monthNames[month - 1] + " " + date + ", " + year;
-            const timeFormat = value.time + " EST";
-
-            if(Number(year) === this.state.year && Number(month) === this.state.month + 1)
-                return (
-                    <PastEventCard
-                        title={value.name}
-                        date={dateFormat}
-                        time={timeFormat}
-                        img={value.image}
-                    />
-                );
-            return(null);
-        });
-        return (
-            <div>
-                <div id={"month"}>
-                    <span id={"calendar"} className={"body"}>{month} {this.state.year}</span>
-                    <div id={"arrowCont"}>
-                        <Arrow
-                            clickFunction={ this.clickUp }
-                            isRight={false}/>
-                        <Arrow
-                            clickFunction={ this.clickDown }
-                            isRight={true}/>
-                    </div>
-                </div>
-                <div id={"pastEvents"}>
-                    {events}
-                </div>
-            </div>
-        )
-    }
-};
-
-export default Events;
+export default EventsData;

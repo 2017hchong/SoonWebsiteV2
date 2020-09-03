@@ -30,14 +30,14 @@
 }
 
 #dateTimeDivMainEvent {
-    margin-bottom: 36px;
+    margin-bottom: 5px;
     color: rgba(0, 0, 0, 0.36);
 
     position: relative;
 }
 
 #titleMainEvent {
-    margin-bottom: 22px;
+    margin-bottom: 5px;
 }
 
 #locationMainEvent {
@@ -51,8 +51,8 @@
     background-color: rgba(0, 0, 0, 0.36);
     border-radius: 50%;
     display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 
 
     margin-top: 0;
@@ -119,13 +119,13 @@
 /* tablet & mobile (landscape) */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
     #dateTimeDivMainEvent {
-        margin-bottom: 5px;
+        margin-bottom: 0;
         color: rgba(0, 0, 0, 0.36);
 
         position: relative;
     }
     #titleMainEvent {
-        margin-bottom: 7px;
+        margin-bottom: 0;
     }
     #mainText {
         padding-left: 20px;
