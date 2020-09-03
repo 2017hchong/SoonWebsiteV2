@@ -55,6 +55,8 @@ export default class SimpleSlider extends Component {
             prevArrow: <PrevArrow />
         };
 
+        const length = this.props.previewCards == null ? 0 : this.props.previewCards.length;
+
         return (
             <div>
                 <Slider {...settings}
@@ -72,7 +74,7 @@ export default class SimpleSlider extends Component {
                     className={"slider2"}
                     asNavFor={this.state.nav1}
                     ref={slider => (this.slider2 = slider)}
-                    slidesToShow={5}
+                    slidesToShow={length}
                     swipeToSlide={true}
                     focusOnSelect={true}>
                     {this.props.previewCards}

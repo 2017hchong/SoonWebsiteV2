@@ -13,9 +13,9 @@ class PastEventCard extends React.Component {
     render() {
         const blackOverlay = this.state.hover ?
             <div id={"imageWrapper"}>
-                <div className={"body white titlePastEvent"}>{this.props.title}</div>
-                <div className={"details white"}>{this.props.date}</div>
-                <div className={"details white"}>{this.props.time}</div>
+                <div className={"body bold white titlePastEvent fontSize"}>{this.props.title}</div>
+                <div className={"details white fontSize"}>{this.props.date}</div>
+                <div className={"details white fontSize"}>{this.props.time}</div>
             </div> : null;
 
         const image = this.state.hover ?

@@ -150,26 +150,26 @@ class EventsData extends React.Component {
             />;
         });
 
-        // var previewCards = this.state.weeklyEvents.map((value, index) => {
-        //     const dateSplit = value.date.split('/');
-        //     const year = dateSplit[2];
-        //     const date = dateSplit[1];
-        //     const month = dateSplit[0];
-        //
-        //     const dateFormat = monthNames[month - 1] + " " + date + ", " + year;
-        //     const timeFormat = value.time + " EST";
-        //
-        //     return <PastEventCard
-        //         title={value.name}
-        //         date={dateFormat}
-        //         time={timeFormat}
-        //         img={value.image}
-        //     />
-        // });
+        var previewCards = this.state.weeklyEvents.map((value, index) => {
+            const dateSplit = value.date.split('/');
+            const year = dateSplit[2];
+            const date = dateSplit[1];
+            const month = dateSplit[0];
+
+            const dateFormat = monthNames[month - 1] + " " + date + ", " + year;
+            const timeFormat = value.time + " EST";
+
+            return <PastEventCard
+                title={value.name}
+                date={dateFormat}
+                time={timeFormat}
+                img={value.image}
+            />
+        });
 
         var upcomingEvents = this.state.weeklyEvents.length === 0 ?
             <div className={"body"}>No upcoming events at this time. Check back later!</div> :
-            <EventCarousel eventCards={eventCards} previewCards={null}/>;
+            <EventCarousel eventCards={eventCards} previewCards={previewCards}/>;
 
         return (
             <div id={"upcomingEventsCont"}>{upcomingEvents}</div>

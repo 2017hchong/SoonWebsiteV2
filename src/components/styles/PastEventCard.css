@@ -38,6 +38,10 @@
     color: #FFFFFF;
 }
 
+.fontSize {
+    font-size: 1.5vw;
+}
+
 #titlePastEvent {
     margin-bottom: 20px;
 }
@@ -53,6 +57,6 @@
 /* tablet & mobile (landscape) */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
     #imageWrapper {
-        padding: 25px;
+        padding: 15px;
     }
 }

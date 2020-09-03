@@ -20,9 +20,9 @@ import EventCarousel from "./EventCarousel";
 import EventsData from "./EventsData";
 
 const Instaposts = [
+    "https://www.instagram.com/p/CEkGm8_BtDw/",
     "https://www.instagram.com/p/B3ntXu5B5qD/",
-    "https://www.instagram.com/p/CEXq-7Sh2Zu/",
-    "https://www.instagram.com/p/CEXqaM2BQOH/"
+    "https://www.instagram.com/p/CEXq-7Sh2Zu/"
 ];
 
 const BasicRows = () => <Gallery targetRowHeight={200} columns={4} photos={photos} />;
@@ -172,7 +172,7 @@ const Home = () => (
             <div className={"whiteSpace"}/>
             <h2 className={"subheader whiteSpace"}>Connect with Us!</h2>
             <div className={"body centeredText"}>
-                Go to our <span className={"bold"}>Get Involved</span> page to fill out our interest form!
+                We love meeting new people! Come fill out an interest form and join us for any of our events!
                 <br/><br/>
                 <Link to={"/getInvolved"} className={"linkClass"}>Get Involved</Link>
             </div>
