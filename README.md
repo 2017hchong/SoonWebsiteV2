@@ -5,5 +5,5 @@ npm install react-burger-menu --save<br />
 npm install --save react-router-dom<br />
 yarn add react-select<br />
 npm i react-instagram-embed<br />
-npm install --save react-select
+npm install --save react-select<br/>
 npm install react-slick --save
