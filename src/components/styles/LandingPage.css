@@ -1,14 +1,47 @@
-﻿.mainTitle {
-    margin-top: 30px;
+﻿.inner {
+    overflow: hidden;
+}
+
+.mainTitle {
+    margin-top: 50px;
+    animation: Slide_Up 1.4s ease;
+}
+
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(250px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.inner2 {
+    animation: fadeIn ease-in 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
 }
 
 .subTitle {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .caption {
     text-align: center;
     margin-bottom: 70px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #LPImage1 {
@@ -21,8 +54,8 @@
 #LPImage2 {
     width: 100%;
     height: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
@@ -41,4 +74,76 @@
 .LPImagesRow {
     display: flex;
     align-items: flex-end;
+}
+
+
+/* mobile (portrait) */
+@media only screen and (max-width: 640px) {
+    #LPImage1 {
+        width: 100%;
+        height: 100%;
+        //width: 80%;
+        //height: 80%;
+        //padding: 15px;
+        //transform: translate(13%, -13%);
+    }
+
+    #LPImage2 {
+        width: 0%;
+        height: 0%;
+    }
+
+
+    #LPImage3 {
+        width: 0%;
+        height: 0%;
+    }
+
+    .LPImagesColumn {
+        flex: 0%;
+    }
+
+    .LPImagesRow {
+        margin: auto;
+        display: block;
+    }
+}
+
+
+/* tablet & mobile (landscape) */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+
+    #LPImage1 {
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #LPImage2 {
+        width: 100%;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    #LPImage3 {
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .LPImagesColumn {
+        flex: 33.33%;
+    }
+
+    .LPImagesRow {
+        display: flex;
+        align-items: flex-end;
+    }
+
+
 }

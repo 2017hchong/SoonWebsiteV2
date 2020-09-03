@@ -16,6 +16,7 @@ import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
 import LandingPage from "./LandingPage";
 import Announcements from "./Announcements";
+import EventCarousel from "./EventCarousel";
 
 const Instaposts = [
     "https://www.instagram.com/p/B3ntXu5B5qD/",
@@ -23,8 +24,93 @@ const Instaposts = [
     "https://www.instagram.com/p/CEXqaM2BQOH/"
 ];
 
-
 const BasicRows = () => <Gallery targetRowHeight={200} columns={4} photos={photos} />;
+
+const EventCards = [
+    <MainEventCard
+        img={"https://picsum.photos/700/400?img=1"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=2"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=3"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=4"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=5"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />, <MainEventCard
+        img={"https://picsum.photos/700/400?img=6"}
+        title={"Large Group"}
+        description={"Join us for our first official large group of the semester! This will be a great time to reconnect with fellow SOON members as well as welcome our newcomers!"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+        location={"www.google.com"}
+        isLink={true}
+    />
+];
+
+const PreviewCards = [
+    <PastEventCard
+        img={"https://picsum.photos/700/400?img=1"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=2"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=3"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=4"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=5"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />, <PastEventCard
+        img={"https://picsum.photos/700/400?img=6"}
+        title={"Large Group"}
+        date={"September 10, 2020"}
+        time={"8:00 PM EST"}
+    />
+];
 
 const Home = () => (
     <div>
@@ -64,6 +150,8 @@ const Home = () => (
                     isLink={true}
                 />
 
+                <EventCarousel eventCards={EventCards} previewCards={PreviewCards}></EventCarousel>
+
                 <h2 className={"subheader whiteSpace"}>Connect on Facebook</h2>
                 <div className={"body centeredText"}>
                     We mainly communicate through our Facebook page, so please make sure to join our group for updates on upcoming events and other imporant announcements!
@@ -96,6 +184,8 @@ const Home = () => (
             <div className={"whiteSpace"}/>
             <BasicRows/>
         </Container>
+
+
     </div>
 );
 

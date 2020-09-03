@@ -6,11 +6,14 @@ class LandingPage extends React.Component {
         return (
             <div>
                 <div class="LandingPageText">
-                    <h1 className={"header mainTitle"}> Columbia SOON Movement </h1>
-                    <h2 className={"subheader subTitle"}> MOVEMENTS EVERYWHERE </h2>
-                    <h3 className={"body caption"}> so that everyone knows someone who truly follows Jesus </h3>
+                    <div class="inner">
+                        <h1 className={"header mainTitle"}> Columbia SOON Movement </h1>
+                    </div>
+                    <div class="inner2">
+                        <h2 className={"subheader subTitle"}> MOVEMENTS EVERYWHERE </h2>
+                        <h3 className={"body caption"}> so that everyone knows someone who truly follows Jesus </h3>
+                    </div>
                 </div>
-
 
                 <div class="LPImagesRow">
                     <div class="LPImagesColumn">
