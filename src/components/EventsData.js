@@ -74,8 +74,8 @@ export function loadWeeklyEvents(callback) {
     });
 }
 
-const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
+const monthNames = ["Jan", "Feb", "March", "April", "May", "June",
+    "July", "Aug", "Sep", "Oct", "Nov", "Dec"
 ];
 
 function validURL(str) {
