@@ -9,7 +9,7 @@
 
 /* ########################################## NAV LINKS #################################################*/
 a {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'lust', serif;
   font-size: 16px;
 
   color: #000000;
@@ -35,7 +35,7 @@ a:active {
 }
 
 .linkClass {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'lust', serif;
   font-size: 16px;
 
   color: #000000;
@@ -73,14 +73,14 @@ a:active {
 /* mobile (portrait) */
 @media only screen and (max-width: 640px) {
   a {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'lust', serif;
     font-size: 12px;
 
     color: #000000;
     text-decoration: none; /* no underline */
   }
   .linkClass {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'lust', serif;
     font-size: 12px;
 
     color: #000000;
@@ -89,7 +89,7 @@ a:active {
   .header {
     margin-bottom: 45px;
 
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'lust', serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -101,7 +101,7 @@ a:active {
   }
 
   .subheader {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'bebas-neue-pro', cursive;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -138,7 +138,7 @@ a:active {
 /* tablet & mobile (landscape) */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
   a {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'lust', serif;
     font-size: 12px;
 
     color: #000000;
@@ -155,7 +155,7 @@ a:active {
   .header {
     margin-bottom: 45px;
 
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'lust', serif;
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
@@ -167,7 +167,7 @@ a:active {
   }
 
   .subheader {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'bebas-neue-pro', cursive;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -206,7 +206,7 @@ a:active {
   .header {
     margin-bottom: 45px;
 
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'lust', serif;
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
@@ -218,7 +218,7 @@ a:active {
   }
 
   .subheader {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'bebas-neue-pro', cursive;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
