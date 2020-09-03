@@ -8,4 +8,4 @@ npm i react-instagram-embed<br />
 npm install --save react-select<br/>
 npm install react-slick --save<br/>
 npm install --save react-photo-gallery<br/>
-npm install slick-carousel
+npm install --save slick-carousel
