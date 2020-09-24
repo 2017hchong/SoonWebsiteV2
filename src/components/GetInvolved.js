@@ -18,17 +18,10 @@ class GetInvolved extends React.Component {
         return (
             <Container>
                 <div className={"maxBodyWidth"}>
-                    <div className={"header"}>Get Involved</div>
-                    <div className={"body centered"}>
-                        Thank you for your interest in SOON Movement at Columbia University! We're so excited you're here!<br/><br/><br/>
-                        To learn more about us and have someone reach out to you,
-                        fill out this interest survey and get automatically entered in our giveaway to win a FREE T-SHIRT:
-                        <br/><br/>
-                        <a href={"https://tinyurl.com/soonraffle"} className={"linkClass"}>Fill out Form</a>
-                    </div>
-                    {/*<InterestForm/>*/}
+                    <div className={"header"}>Get Involved</div>  
+                    <InterestForm/>
                     <div id="upcomingImgContainer" className={"whiteSpace"}>
-                        <img id="upcomingImg" src={require('../images/UpcomingEvents.png')} alt={"Upcoming Events"} />
+                        <img id="upcomingImg" src={require('../images/announcements/soon101.png')} alt={"Upcoming Events"} />
                     </div>
                     <div>
                         <div className={"subheader whiteSpace"}>
