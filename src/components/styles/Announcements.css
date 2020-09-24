@@ -29,13 +29,13 @@ a {
 #announcementsLeft {
     float: left;
     position: relative;
-    width: 70%;
+    width: 50%;
 }
 
 #announcementsRight {
     float: right;
     position: relative;
-    width: 25%;
+    width: 50%;
     padding: 10px;
 }
 

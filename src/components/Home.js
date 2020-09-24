@@ -20,8 +20,8 @@ import Announcements from "./Announcements";
 import EventsData from "./EventsData";
 
 const Instaposts = [
-    "https://www.instagram.com/p/CEkGm8_BtDw/",
-    "https://www.instagram.com/p/B3ntXu5B5qD/",
+    "https://www.instagram.com/p/CErrnnSBxpB/",
+    "https://www.instagram.com/p/CEmzyjBhFMb/",
     "https://www.instagram.com/p/CEXq-7Sh2Zu/"
 ];
 
@@ -32,17 +32,19 @@ const Home = () => (
         <LandingPage/>
 
         <Announcements
-            title={"WELCOME BACK!"}
+            title={"🌱 SIGN UP FOR SOONMOIM (SMALL GROUP)! 🌱"}
             details={[
-                "Come learn more about our community and meet both returning and new members at our ⭐️ SOON SOCIAL ⭐️  on September 5th!",
-                "If you're a newcomer, enter our ⬇️ RAFFLE GIVEAWAY ⬇️",
-                "http://www.tinyurl.com/soonraffle"
-            ]}
+                "Attention all new members 📢!",
+                "Sign ups for Soonmoims, or Soon small groups, are now open 🥰!",
+                "As the core of our ministry, Soonmoims offer students the chance to explore and grow in their fath through precious fellowship with one another 💖.",
+                "Sign up using the link below👇🏼.",
+                "http://www.tinyurl.com/cusoongroup"
+]}
             hasLink={false}
             linkLocation={"/events"}
             linkName={"go to events"}
             hasImage={true}
-            imageLocation={require("../images/announcements/soon101.png")}
+            imageLocation={require("../images/announcements/SmiSignup.png")}
         />
 
         <Container>
