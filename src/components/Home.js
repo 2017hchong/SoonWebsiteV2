@@ -20,9 +20,9 @@ import Announcements from "./Announcements";
 import EventsData from "./EventsData";
 
 const Instaposts = [
-    "https://www.instagram.com/p/CErrnnSBxpB/",
-    "https://www.instagram.com/p/CEmzyjBhFMb/",
-    "https://www.instagram.com/p/CEXq-7Sh2Zu/"
+    "https://www.instagram.com/p/CEXq-7Sh2Zu/",
+    "https://www.instagram.com/p/CEr573_Bmsv/",
+    "https://www.instagram.com/p/CGk66Xknucu/"
 ];
 
 const BasicRows = () => <Gallery targetRowHeight={200} columns={4} photos={photos} />;
