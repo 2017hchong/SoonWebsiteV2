@@ -35,16 +35,16 @@ const Home = () => (
             title={"🌱 SIGN UP FOR SOONMOIM (SMALL GROUP)! 🌱"}
             details={[
                 "Attention all new members 📢!",
-                "Sign ups for Soonmoims, or Soon small groups, are now open 🥰!",
-                "As the core of our ministry, Soonmoims offer students the chance to explore and grow in their fath through precious fellowship with one another 💖.",
+                "Registration for Higher Calling Conference (Dec 28th - 30th) is now opened🥰!",
+                "The EARLY BIRD registration ends December 4th, 2020 so hurry up and sign up 💖!!!",
                 "Sign up using the link below👇🏼.",
-                "http://www.tinyurl.com/cusoongroup"
+                "highercallingconference.org"
 ]}
             hasLink={false}
             linkLocation={"/events"}
             linkName={"go to events"}
             hasImage={true}
-            imageLocation={require("../images/announcements/SmiSignup.png")}
+            imageLocation={require("../images/announcements/HCEarlybird.png")}
         />
 
         <Container>
