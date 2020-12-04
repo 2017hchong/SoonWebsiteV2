@@ -32,9 +32,9 @@ const Home = () => (
         <LandingPage/>
 
         <Announcements
-            title={"🌱 SIGN UP FOR SOONMOIM (SMALL GROUP)! 🌱"}
+            title={"SIGN UP FOR HIGHER CALLING CONFERENCE!!!"}
             details={[
-                "Attention all new members 📢!",
+                "Attention all members 📢!",
                 "Registration for Higher Calling Conference (Dec 28th - 30th) is now opened🥰!",
                 "The EARLY BIRD registration ends December 4th, 2020 so hurry up and sign up 💖!!!",
                 "Sign up using the link below👇🏼.",
