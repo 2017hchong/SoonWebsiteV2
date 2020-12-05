@@ -36,7 +36,6 @@ const Home = () => (
             details={[
                 "Attention all members 📢!",
                 "Registration for Higher Calling Conference (Dec 28th - 30th) is now opened🥰!",
-                "The EARLY BIRD registration ends December 4th, 2020 so hurry up and sign up 💖!!!",
                 "Sign up using the link below👇🏼.",
                 "highercallingconference.org"
 ]}
@@ -44,7 +43,7 @@ const Home = () => (
             linkLocation={"/events"}
             linkName={"go to events"}
             hasImage={true}
-            imageLocation={require("../images/announcements/HCEarlybird.png")}
+            imageLocation={require("../images/announcements/HC.jpg")}
         />
 
         <Container>
